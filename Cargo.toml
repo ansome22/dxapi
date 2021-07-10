@@ -1,0 +1,6 @@
+[workspace]
+#"examples",
+members = [
+    "dx-api",
+    "generator",
+]

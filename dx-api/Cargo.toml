@@ -1,0 +1,26 @@
+[package]
+name = "dx-api"
+description = "DirectX12 API bindings"
+version = "0.1.0"
+edition = "2018"
+keywords = ["gamedev", "graphics", "dx12", "bindings"]
+readme = "../README.md"
+license = "MIT"
+categories = [
+    "api-bindings",
+    "game-development",
+    "graphics",
+    "rendering::graphics-api",
+]
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+libloading = { version = "0.7", optional = true }
+
+[features]
+default = ["libloading"]
+
+[package.metadata.release]
+no-dev-version = true
